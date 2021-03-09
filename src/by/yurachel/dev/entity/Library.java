@@ -5,11 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Library {
-    private List<Book> library;
+    private List<Book> library = new ArrayList<>();
 
-    {
-        library = new ArrayList<>();
-    }
 
     public List<Book> getLibrary() {
         return library;
@@ -20,8 +17,7 @@ public class Library {
     }
 
 
-
-    public void addBookToLibrary(Book...book) {
+    public void addBookToLibrary(Book... book) {
         this.library.addAll(Arrays.asList(book));
     }
 
